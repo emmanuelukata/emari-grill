@@ -113,3 +113,4 @@ export interface CheckoutFormData {
   deliveryAddress: string;
   orderNote?: string;
 }
+

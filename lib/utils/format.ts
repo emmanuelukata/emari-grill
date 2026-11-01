@@ -94,3 +94,4 @@ export function getWhatsAppLink(phone: string, message: string): string {
   const encodedText = encodeURIComponent(message);
   return `https://wa.me/${cleanedPhone}?text=${encodedText}`;
 }
+

@@ -231,3 +231,4 @@ export function ProductCard({ product, sauces }: ProductCardProps) {
     </article>
   );
 }
+

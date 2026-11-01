@@ -166,3 +166,4 @@ Open [`components/Logo.tsx`](file:///components/Logo.tsx). Replace the SVG icon 
   4. Click "Confirm Payment" -> Order moves to `Payment Confirmed`.
   5. Click "Preparing (Grill)" -> Step advances.
   6. Set ETA (e.g. "45 to 60 mins") -> Customer tracking page shows live ETA.
+

@@ -380,3 +380,4 @@ insert into settings (
   '1234567890',
   'Orders in Uyo are delivered hot via dispatch rider. Interstate orders delivered by travel transit.'
 ) on conflict (id) do nothing;
+

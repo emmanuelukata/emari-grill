@@ -103,3 +103,4 @@ export const DEFAULT_SETTINGS: BusinessSettings = {
   account_number: '1234567890',
   delivery_note: 'Deliveries within Uyo arrive hot and fresh within 45 to 60 minutes.',
 };
+
