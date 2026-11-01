@@ -93,6 +93,19 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     [announce]
   );
 
+  const removeItem = useCallback(
+    (itemId: string) => {
+      setItems((prevItems) => {
+        const itemToRemove = prevItems.find((i) => i.id === itemId);
+        if (itemToRemove) {
+          announce(`Removed ${itemToRemove.product_name} from order`);
+        }
+        return prevItems.filter((item) => item.id !== itemId);
+      });
+    },
+    [announce]
+  );
+
   const updateQuantity = useCallback(
     (itemId: string, newQuantity: number) => {
       if (newQuantity <= 0) {
@@ -110,20 +123,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         })
       );
     },
-    [announce]
-  );
-
-  const removeItem = useCallback(
-    (itemId: string) => {
-      setItems((prevItems) => {
-        const itemToRemove = prevItems.find((i) => i.id === itemId);
-        if (itemToRemove) {
-          announce(`Removed ${itemToRemove.product_name} from order`);
-        }
-        return prevItems.filter((item) => item.id !== itemId);
-      });
-    },
-    [announce]
+    [announce, removeItem]
   );
 
   const clearCart = useCallback(() => {

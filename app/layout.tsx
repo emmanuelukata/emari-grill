@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer';
 import { StickyBottomBar } from '@/components/StickyBottomBar';
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://emarigrill.com'),
   title: 'Emari Grill | Flame-Grilled Chicken in Uyo, Akwa Ibom',
   description:
     'Hot, juicy, authentic flame-grilled chicken. Order online with simple bank transfer and fast delivery across Uyo and interstate.',
@@ -30,10 +31,10 @@ export const metadata: Metadata = {
       'Hot, juicy, authentic flame-grilled chicken. Order online with fast delivery in Uyo and interstate.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.svg',
         width: 1200,
         height: 630,
-        alt: 'Emari Grill - Hot & Juicy Flame-Grilled Chicken',
+        alt: 'Emari Grill - Hot & Juicy Flame-Grilled Chicken in Uyo',
       },
     ],
   },
@@ -42,12 +43,12 @@ export const metadata: Metadata = {
     title: 'Emari Grill | Flame-Grilled Chicken in Uyo',
     description:
       'Hot, juicy, authentic flame-grilled chicken. Order online with fast delivery in Uyo and interstate.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.svg'],
   },
   manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/icon-192.png',
+    icon: '/icon.svg',
+    apple: '/icon.svg',
   },
 };
 

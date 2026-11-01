@@ -1,0 +1,17 @@
+{
+  "name": "Emari Grill",
+  "short_name": "Emari Grill",
+  "description": "Hot, juicy flame-grilled chicken delivered straight to your door in Uyo, Akwa Ibom.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF9F5",
+  "theme_color": "#C2410C",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
